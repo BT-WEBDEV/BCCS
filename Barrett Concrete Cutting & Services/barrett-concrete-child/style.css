@@ -1,0 +1,138 @@
+/* 
+Theme Name: Barrett Concrete Child
+Theme URI: gkaadvertising.com
+Description: Child Theme by GKA Advertising
+Author: Brandon Tetrick
+Author URI: gkaadvertising.com
+Template: barrett-concrete
+Version: 1.0.1
+Text Domain: barrett-concrete-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/*
+    Add your custom styles here
+*/
+
+/* ABOUT US PICTURE GRID */ 
+.picture-row-wrap {
+    justify-content: center;
+    gap: 22px; 
+    margin-bottom: 22px; 
+}
+
+.picture-container {
+    width: 375px !important; 
+    height: 329px;
+    padding-top: 170px; 
+    padding-left: 25px !important; 
+    padding-right: 25px !important; 
+    padding-bottom: 30px;  
+    background-size:cover !important;
+    background-repeat: no-repeat !important;
+    border-radius: 5%; 
+}
+
+.picture-container:hover {
+    padding-top: 25px;
+    background-color: black !important;  
+}
+
+.picture-container:hover .info-container {
+    display: none; 
+}
+
+.picture-container:hover .active-hover{
+    display: block; 
+}
+
+#about-pic-1 {
+    background: rgba(0, 0, 0, .65) url('images/about-us/picture-grid-1.jpg');
+    background-blend-mode: darken; 
+}
+
+#about-pic-2 {
+    background: rgba(0, 0, 0, .65) url('images/about-us/picture-grid-2.jpg');
+    background-blend-mode: darken; 
+}
+
+#about-pic-3 {
+    background: rgba(0, 0, 0, .65) url('images/about-us/picture-grid-3.jpg');
+    background-blend-mode: darken; 
+}
+
+#about-pic-4 {
+    background: rgba(0, 0, 0, .65) url('images/about-us/picture-grid-4.jpg');
+    background-blend-mode: darken; ;
+}
+
+#about-pic-5 {
+    background: rgba(0, 0, 0, .65) url('images/about-us/picture-grid-5.jpg');
+    background-blend-mode: darken; 
+}
+
+#about-pic-6 {
+    background: rgba(0, 0, 0, .65) url('images/about-us/picture-grid-6.jpg');
+    background-blend-mode: darken; 
+}
+
+.info-container {
+    color: white;
+}
+
+.active-hover {
+    color: white;
+    display: none; 
+}
+
+.grid-heading {
+    font-family: "Bandeins Strange Variable", Sans-serif;
+    font-size: 20px; 
+    font-weight: bold; 
+}
+
+.grid-subheading {
+    font-family: "Bandeins Strange Variable", Sans-serif;
+    font-size: 20px; 
+    width: 40%; 
+}
+
+.picture-container:hover .grid-subheading {
+    width: 100%; 
+}
+
+/* TABLET AND MOBILE STYLES */  
+
+@media screen and (max-width: 768px) { 
+    .picture-container {
+        width: 349px !important; 
+        height: 300px;
+        padding-top: 155px; 
+        padding-left: 15px !important; 
+        padding-right: 15px !important; 
+        padding-bottom: 30px;
+    }
+    .picture-container:hover {
+        padding-top: 15px;
+    }
+}
+
+/* Extra Small Mobile */ 
+
+@media screen and (max-width: 320px) {
+    .picture-container:hover {
+        padding-top: 25px;
+    }
+    
+    .grid-heading {
+        font-size: 20px;  
+    }
+    
+    .grid-subheading {
+        font-size: 18px; 
+        width: 50%; 
+    }
+
+}
